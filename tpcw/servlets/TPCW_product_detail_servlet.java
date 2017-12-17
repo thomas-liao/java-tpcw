@@ -79,17 +79,17 @@ public class TPCW_product_detail_servlet extends HttpServlet {
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n"); 
       out.print("<HTML><HEAD> <TITLE>TPC-W Product Detail Page</TITLE>\n");
       out.print("</HEAD> <BODY BGCOLOR=\"#ffffff\"> <H1 ALIGN=\"center\">" + 
-                  "TPC Web Commerce Benchmark (TPC-W)</H1>\n");
+                  "Laptop Guru Platform</H1>\n");
       out.print("<CENTER><IMG SRC=\"../tpcw/Images/tpclogo.gif\"" + 
 	      " ALIGN=\"BOTTOM\" BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\">\n");
       out.print("</CENTER> <H2 ALIGN=\"center\">Product Detail Page</H2>\n"); 
 
-      out.print("<H2> Title: "+mybook.i_title +"</H2>\n");
-      out.print("<P>Author: "+mybook.a_fname +" "+mybook.a_lname + "<BR>\n");
-      out.print("Subject: " + mybook.i_subject + "\n");
+      out.print("<H2> Product Name: "+mybook.i_title +"</H2>\n");
+      out.print("<P>Prime, Stock: "+mybook.a_fname +" "+mybook.a_lname + "<BR>\n");
+      out.print("Make: " + mybook.i_subject + "\n");
       out.print("<P><IMG SRC=../tpcw/Images/"+mybook.i_image + 
 	    " ALIGN=\"RIGHT\" BORDER=\"0\" WIDTH=\"200\" HEIGHT=\"200\">\n");
-      out.print("Decription: <I>"+ mybook.i_desc + "</I></P>\n");
+      out.print("Star: <I>"+ mybook.i_desc + "</I></P>\n");
       out.print("<BLOCKQUOTE><P><B>Suggested Retail: " + 
 		  mybook.i_srp + "</B>\n");
       out.print("<BR><B>Our Price:</B>\n");
@@ -98,13 +98,13 @@ public class TPCW_product_detail_servlet extends HttpServlet {
       out.print("<B>You Save:</B><FONT COLOR=\"#dd0000\"> $" 
 		  + (mybook.i_srp - mybook.i_cost) + "</B></FONT></P>\n");
       out.print("</BLOCKQUOTE><DL><DT><FONT SIZE=\"2\">\n");
-      out.print("Backing: " + mybook.i_backing + ", " + mybook.i_page + 
-		  " pages<BR>\n");
-      out.print("Published by " + mybook.i_publisher +"<BR>\n");
-      out.print("Publication date: " + mybook.i_pub_Date +"<BR>\n");
-      out.print("Avail date: " + mybook.i_avail + "<BR>\n");
-      out.print("Dimensions (in inches): " + mybook.i_dimensions + "<BR>\n");
-      out.print("ISBN: " + mybook.i_isbn +"</FONT></DT></DL><P>\n");
+      // out.print("Backing: " + mybook.i_backing + ", " + mybook.i_page + 
+      //		  " pages<BR>\n");
+      //out.print("Published by " + mybook.i_publisher +"<BR>\n");
+      //out.print("Publication date: " + mybook.i_pub_Date +"<BR>\n");
+      //out.print("Avail date: " + mybook.i_avail + "<BR>\n");
+      //out.print("Dimensions (in inches): " + mybook.i_dimensions + "<BR>\n");
+      // out.print("ISBN: " + mybook.i_isbn +"</FONT></DT></DL><P>\n");
 
       url = "TPCW_shopping_cart_interaction?I_ID="+I_ID+"&QTY=1";
       if(SHOPPING_ID != null)
