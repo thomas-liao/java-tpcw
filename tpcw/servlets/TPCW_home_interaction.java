@@ -71,12 +71,12 @@ public class TPCW_home_interaction extends HttpServlet {
 		" CELLPADDING=\"6\" CELLSPACING=\"0\" WIDTH=\"700\">\n");
       out.print("<TR ALIGN=\"CENTER\" BGCOLOR=\"#ffffff\" VALIGN=\"top\">\n");
       out.print("<TD COLSPAN=\"2\" VALIGN=\"MIDDLE\" WIDTH=\"300\">\n");
-      out.print("<IMG SRC=\"../tpcw/Images/whats_new.jpeg\""+ 
+      out.print("<IMG SRC=\"../tpcw/Images/whats_new.gif\""+ 
 		" ALT=\"New Product\">\n");
       out.print("</TD>\n");
       out.print("<TD BGCOLOR=\"#ffffff\" WIDTH=\"100\"></TD>\n");
       out.print("<TD COLSPAN=\"2\" WIDTH=\"300\">\n");
-      out.print("<IMG SRC=\"../tpcw/Images/best_seller.png\""+
+      out.print("<IMG SRC=\"../tpcw/Images/best_sellers.gif\""+
 		" ALT=\"Best Seller\"></TD></TR>\n");
       
       for(i = 0; i < column1.size(); i++){
@@ -140,7 +140,7 @@ public class TPCW_home_interaction extends HttpServlet {
       
       out.print("<A HREF=\"" + res.encodeUrl(url)); 
 
-      out.print("\"><IMG SRC=\"../tpcw/Images/shopping_cart.png\"" +
+      out.print("\"><IMG SRC=\"../tpcw/Images/shopping_cart_B.gif\"" +
 		" ALT=\"Shopping Cart\"></A>\n");
       
       url = "TPCW_search_request_servlet";
@@ -167,7 +167,7 @@ public class TPCW_home_interaction extends HttpServlet {
       
       out.print("<A HREF=\"" + res.encodeUrl(url));
       
-      out.print("\"><IMG SRC=\"../tpcw/Images/order_status.jpg\"" +
+      out.print("\"><IMG SRC=\"../tpcw/Images/order_status_B.gif\"" +
 		" ALT=\"Order Status\"></A>\n");
       out.close();
       return;
