@@ -86,8 +86,7 @@ public class TPCW_execute_search extends HttpServlet {
       out.print("<HTML><HEAD><TITLE> Search Results Page: " 
 		+ search_string + "</TITLE></HEAD>\n"); 
       out.print("<BODY BGCOLOR=\"#ffffff\">\n"); 
-      out.print("<H1 ALIGN=\"center\">TPC Web Commerce"+ 
-		" Benchmark (TPC-W)</H1>\n"); 
+      out.print("<H1 ALIGN=\"center\">Laptop Guru Platform</H1>\n"); 
       out.print("<P ALIGN=\"center\">\n");
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" ALIGN=\"BOTTOM\"" +
 		" BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\"> </P> <P></P>\n") ;
@@ -100,17 +99,17 @@ public class TPCW_execute_search extends HttpServlet {
 
       Vector books = null; //placate javac
       //Display new products
-      if(search_type.equals("author"))
+      if(search_type.equals("author")) // won't be executed.. we deleted author in ..tpcw search servlet
 	  books = TPCW_Database.doAuthorSearch(search_string);
-      else if(search_type.equals("title"))
+      else if(search_type.equals("Product Name"))
 	  books = TPCW_Database.doTitleSearch(search_string);
-      else if(search_type.equals("subject"))
+      else if(search_type.equals("Make"))
 	  books = TPCW_Database.doSubjectSearch(search_string);
 
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
-      out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
-      out.print("<TD><FONT SIZE=\"+1\">Title</FONT></TD></TR>\n");
+      out.print("<TD><FONT SIZE=\"+1\">Prime Storage</FONT></TD>\n"); 
+      out.print("<TD><FONT SIZE=\"+1\">Product Name</FONT></TD></TR>\n");
       
       //Print out a line for each item returned by the DB
       for(i = 0; i < books.size(); i++){

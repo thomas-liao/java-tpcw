@@ -84,11 +84,11 @@ public class TPCW_promotional_processing {
 	out.print("<TABLE ALIGN=CENTER BORDER=0 WIDTH=660>\n");
 	out.print("<TR ALIGN=CENTER VALIGN=top>\n");
 	out.print("<TD COLSPAN=5><B><FONT COLOR=#ff0000 SIZE=+1>"+
-		  "Click on one of our latest laptops to find out more!" +
+		  "Hey Friend, click on one of our latest laptops to find out more!" +
 		  "</FONT></B></TD></TR>\n");
 	out.print("<TR ALIGN=CENTER VALIGN=top>\n");
 	
-	//Create links and references to book images
+	//Create links and references to laptop images
 	for(i = 0; i < related_item_ids.size(); i++){
 	    url = "./TPCW_product_detail_servlet";
 	    url = url + "?I_ID=" + 

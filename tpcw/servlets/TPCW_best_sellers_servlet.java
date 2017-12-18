@@ -80,13 +80,13 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       out.print("<HTML><HEAD><TITLE> Best Sellers: " 
 		+ subject + "</TITLE></HEAD>\n"); 
       out.print("<BODY BGCOLOR=\"#ffffff\">\n"); 
-      out.print("<H1 ALIGN=\"center\">TPC Web Commerce"+ 
-		" Benchmark (TPC-W)</H1>\n"); 
+      out.print("<H1 ALIGN=\"center\">Laptop Guru"+ 
+		"Platform</H1>\n"); 
       out.print("<P ALIGN=\"center\">\n");
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" ALIGN=\"BOTTOM\"" +
 		" BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\"> </P> <P></P>\n") ;
 	  
-      out.print("<H2 ALIGN=\"center\">Best Sellers Page - Subject: " +
+      out.print("<H2 ALIGN=\"center\">Best Sellers Page - Make: " +
 		subject + "</H2>\n"); 
 	  
       //Display promotions
@@ -97,7 +97,7 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
       out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
-      out.print("<TD><FONT SIZE=\"+1\">Title</FONT></TD></TR>\n");
+      out.print("<TD><FONT SIZE=\"+1\">Product Name</FONT></TD></TR>\n");
       
 
       //Get best sellers from DB

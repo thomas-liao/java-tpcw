@@ -73,13 +73,13 @@ public class TPCW_search_request_servlet extends HttpServlet {
       String url;
 
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n");
-      out.print("<HTML> <HEAD><TITLE>Search Request Page</TITLE></HEAD>\n");
+      out.print("<HTML> <HEAD><TITLE>Search Laptop</TITLE></HEAD>\n");
       out.print("<BODY BGCOLOR=\"#ffffff\">\n");
-      out.print("<H1 ALIGN=\"center\">TPC W Commerce Benchmark (TPC-W)</H1>\n");
+      out.print("<H1 ALIGN=\"center\">Laptop Guru Platform</H1>\n");
       out.print("<H2 ALIGN=\"center\">");
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" ALIGN=\"BOTTOM\" " + 
 		"BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\"></H2>\n");
-      out.print("<H2 ALIGN=\"center\">Search Request Page</H2>");
+      out.print("<H2 ALIGN=\"center\">Search</H2>");
       
       //Insert Promotional processing
       TPCW_promotional_processing.DisplayPromotions(out, req, res,-1);
@@ -90,9 +90,9 @@ public class TPCW_search_request_servlet extends HttpServlet {
       out.print("<H3>Search by:</H3></TD><TD WIDTH=\"100\"></TD></TR>\n");
       out.print("<TR><TD ALIGN=\"right\">\n");
       out.print("<SELECT NAME=\"search_type\" SIZE=\"1\">\n");
-      out.print("<OPTION SELECTED=\"SELECTED\" VALUE=\"author\">Author</OPTION>\n");
-      out.print("<OPTION VALUE=\"title\">Title</OPTION>\n");
-      out.print("<OPTION VALUE=\"subject\">Subject</OPTION></SELECT></TD>\n");
+      //out.print("<OPTION SELECTED=\"SELECTED\" VALUE=\"author\">Author</OPTION>\n");
+      out.print("<OPTION VALUE=\"Product Name\">Product Name</OPTION>\n");
+      out.print("<OPTION VALUE=\"Make\">Make</OPTION></SELECT></TD>\n");
       
       out.print("<TD><INPUT NAME=\"search_string\" SIZE=\"30\"></TD></TR>\n");
       out.print("</TABLE>\n");

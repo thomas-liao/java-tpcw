@@ -12,7 +12,7 @@ public class TPCW_home_interaction extends HttpServlet {
       Vector column1 = new Vector();
       Vector column2 = new Vector();
 
-      column1.addElement(new String("ARTS"));//1
+      column1.addElement(new String("HP"));//1
       column2.addElement(new String("NON-FICTION"));
       column1.addElement(new String("BIOGRAPHIES"));//2
       column2.addElement(new String("PARENTING"));

@@ -26,7 +26,7 @@ public class TPCW_new_products_servlet extends HttpServlet {
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" ALIGN=\"BOTTOM\"" +
 		" BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\"> </P> <P></P>\n") ;
 	  
-      out.print("<H2 ALIGN=\"center\">New Products Page - Subject: " +
+      out.print("<H2 ALIGN=\"center\">New Products Page - Make: " +
 		subject + "</H2>\n"); 
 	  
       //Display promotions
@@ -37,7 +37,7 @@ public class TPCW_new_products_servlet extends HttpServlet {
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
       out.print("<TD><FONT SIZE=\"+1\">Make</FONT></TD>\n"); 
-      out.print("<TD><FONT SIZE=\"+1\">Title</FONT></TD></TR>\n");
+      out.print("<TD><FONT SIZE=\"+1\">Product Name</FONT></TD></TR>\n");
       
       //Need to insert code here to get new products from the database,
       //and then spit them out in html to complete the table
