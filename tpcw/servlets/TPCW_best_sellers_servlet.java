@@ -96,7 +96,8 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
-      out.print("<TD><FONT SIZE=\"+1\">Prime - Qty</FONT></TD>\n"); 
+      out.print("<TD><FONT SIZE=\"+1\">Prime</FONT></TD>\n"); 
+      out.print("<TD><FONT SIZE=\"+1\">Qty</FONT></TD>\n"); 
       out.print("<TD><FONT SIZE=\"+1\">Product Name</FONT></TD></TR>\n");
       
 
@@ -108,7 +109,9 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       for(i = 0; i < books.size(); i++){
 	  ShortBook book = (ShortBook) books.elementAt(i);
 	  out.print("<TR><TD>" + (i+1) + "</TD>\n");
-	  out.print("<TD><I>"+ book.a_fname +" "+ book.a_lname +"</I></TD>\n");
+	  // out.print("<TD><I>"+ book.a_fname +" "+ book.a_lname +"</I></TD>\n");
+	  out.print("<TD><I>"+ book.a_fname "</I></TD>\n");
+	  out.print("<TD><I>"+ book.a_lname +"</I></TD>\n");
 	  url = "./TPCW_product_detail_servlet?I_ID="+ 
 	      String.valueOf(book.i_id);
 	  if(SHOPPING_ID != null)
