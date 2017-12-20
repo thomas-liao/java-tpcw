@@ -79,10 +79,10 @@ public class TPCW_buy_request_servlet extends HttpServlet {
       Customer cust = null;
       
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n");
-      out.print("<HTML><HEAD><TITLE>TPC-W Buy Request</TITLE></HEAD>\n");
+      out.print("<HTML><HEAD><TITLE>Laptop Guru Platform</TITLE></HEAD>\n");
       out.print("<BODY BGCOLOR=\"ffffff\">\n");
-      out.print("<H1 ALIGN=\"CENTER\">TPC Web Commerce Benchmark " +
-		"(TPC-W)</H1>\n");
+      out.print("<H1 ALIGN=\"CENTER\">Laptop Guru" +
+		"Platform</H1>\n");
       out.print("<H2 ALIGN=\"CENTER\">Buy Request Page</H2>\n");
 
 

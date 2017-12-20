@@ -72,12 +72,11 @@ public class TPCW_order_display_servlet extends HttpServlet {
       res.setContentType("text/html");
 
      out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n"); 
-     out.print("<HTML><HEAD><TITLE>TPC-W Order Display Page</TITLE></HEAD>\n");
+     out.print("<HTML><HEAD><TITLE>Laptop Guru Platform Display Page</TITLE></HEAD>\n");
      out.print("<BODY BGCOLOR=\"#FFFFFF\"><H1 ALIGN=\"CENTER\">" + 
 	       "TPC Web Commerce Benchmark (TPC-W)</H1>\n"); 
      out.print("<H2 ALIGN=\"CENTER\">Order Display Page</H2>\n");
      out.print("<BLOCKQUOTE> <BLOCKQUOTE> <BLOCKQUOTE> <BLOCKQUOTE> <HR>\n"); 
-
      String uname = req.getParameter("UNAME");
      String passwd = req.getParameter("PASSWD");
      if(uname!= null && passwd!=null){
@@ -179,8 +178,6 @@ public class TPCW_order_display_servlet extends HttpServlet {
 		    "</H4></TD>\n");
 	  out.print("<TD> <H4>" + line.i_cost + "</H4></TD>\n"); //Cost
 	  out.print("<TD> <H4>"+ line.ol_qty + "</H4></TD>\n"); //Qty
-	  out.print("<TD> <H4>"+ line.ol_discount + "</H4></TD>\n"); //Discount
-	  out.print("<TD> <H4>"+ line.ol_comments + "</H4></TD></TR>\n"); 
 	  }
       }
       out.print("</TABLE><BR></CENTER>\n");

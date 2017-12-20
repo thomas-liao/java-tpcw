@@ -77,7 +77,7 @@ public class TPCW_product_detail_servlet extends HttpServlet {
       Book mybook = TPCW_Database.getBook(I_ID);
       
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n"); 
-      out.print("<HTML><HEAD> <TITLE>TPC-W Product Detail Page</TITLE>\n");
+      out.print("<HTML><HEAD> <TITLE>Laptop Guru - Product Details</TITLE>\n");
       out.print("</HEAD> <BODY BGCOLOR=\"#ffffff\"> <H1 ALIGN=\"center\">" + 
                   "Laptop Guru Platform</H1>\n");
       out.print("<CENTER><IMG SRC=\"../tpcw/Images/tpclogo.gif\"" + 

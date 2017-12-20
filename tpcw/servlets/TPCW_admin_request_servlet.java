@@ -80,10 +80,10 @@ public class TPCW_admin_request_servlet extends HttpServlet {
       Book book = TPCW_Database.getBook(I_ID);
 
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n");
-      out.print("<HTML><HEAD><TITLE>TPC-W Product Update Page</TITLE></HEAD>");
+      out.print("<HTML><HEAD><TITLE>Laptop Guru Platform</TITLE></HEAD>");
       out.print("<BODY BGCOLOR=\"#ffffff\">\n");
-      out.print("<H1 ALIGN=\"center\">TPC Web Commerce Benchmark "+
-		"(TPC-W)</H1>");
+      out.print("<H1 ALIGN=\"center\">Laptop Guru "+
+		"Platform</H1>");
       out.print("<H2 ALIGN=\"center\"><IMG SRC=\"../tpcw/Images/tpclogo.gif\""+
 		"ALIGN=\"BOTTOM\" BORDER=\"0\" WIDTH=\"288\" " +
 		"HEIGHT=\"67\"></H2>\n");

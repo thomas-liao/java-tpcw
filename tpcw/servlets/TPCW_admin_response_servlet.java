@@ -87,9 +87,9 @@ public class TPCW_admin_response_servlet extends HttpServlet {
       
       //Spit out the HTML
       out.print("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD W3 HTML//EN\">\n");
-      out.print("<HTML> <HEAD><TITLE>TPC-W Admin Response Page</TITLE></HEAD>\n");
+      out.print("<HTML> <HEAD><TITLE>Laptop Guru Platform</TITLE></HEAD>\n");
       out.print("<BODY BGCOLOR=\"#FFFFFF\">\n");
-      out.print("<H1 ALIGN=\"CENTER\">TPC Web Commerce Benchmark (TPC-W)</H1>\n");
+      out.print("<H1 ALIGN=\"CENTER\">Laptop Guru Platform</H1>\n");
       out.print("<H2 ALIGN=\"CENTER\"><IMG SRC=\"../tpcw/Images/tpclogo.gif\""
 		+"ALIGN=\"BOTTOM\" BORDER=\"0\" WIDTH=\"288\" "
 		+"HEIGHT=\"67\"></H2> ");

@@ -87,7 +87,7 @@ public class TPCW_customer_registration_servlet extends HttpServlet {
       out.print("<HTML>\n");
       out.print("<HEAD><TITLE>Customer Registration</TITLE></HEAD>\n");
       out.print("<BODY BGCOLOR=\"#ffffff\">\n");
-      out.print("<H1 ALIGN=\"center\">TPC Web Commerce Benchmark (TPC-W)"
+      out.print("<H1 ALIGN=\"center\">Laptop Guru Platform"
 		+"</H1><H1 ALIGN=\"center\">\n");
  
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" " +

@@ -41,9 +41,9 @@ public class TPCW_home_interaction extends HttpServlet {
       String SHOPPING_ID = req.getParameter("SHOPPING_ID");
 
       //Generate Home Page Head
-      out.print("<HTML> <HEAD> <TITLE>TPC-W Home Page</TITLE></HEAD>\n");
+      out.print("<HTML> <HEAD> <TITLE>Laptop Guru Platform</TITLE></HEAD>\n");
       out.print("<BODY BGCOLOR=\"#ffffff\">\n"); 
-      out.print("<H1 ALIGN=\"center\">TPC Web Commerce Benchmark (TPC-W)</H1>\n");
+      out.print("<H1 ALIGN=\"center\">Laptop Guru Platform</H1>\n");
       out.print("<P ALIGN=\"CENTER\">\n");
       out.print("<IMG SRC=\"../tpcw/Images/tpclogo.gif\" ALIGN=\"BOTTOM\""+ 
 		"BORDER=\"0\" WIDTH=\"288\" HEIGHT=\"67\"></P>\n");
@@ -161,12 +161,7 @@ public class TPCW_home_interaction extends HttpServlet {
       out.print("\"><IMG SRC=\"../tpcw/Images/order_status_B.gif\"" +
 		" ALT=\"Order Status\"></A>\n");
       
-      //Generate Trailer
-      out.print("<hr><font size=-1>\n");
-      out.print("<a href=\"http://www.tpc.org/miscellaneous/TPC_W.folder/Company_Public_Review.html\">TPC-W Benchmark</a>,\n"); 
-      out.print("<a href=\"http://www.cae.wisc.edu/~mikko/ece902.html\">ECE 902</a>,\n");
-      out.print("<a href=\"http://www.cs.wisc.edu/~arch/uwarch\">University of Wisconsin Computer Architecture</a>,November 1999.\n");
-      out.print("</font> </BODY> </HTML>\n");
+
       out.close();
       return;
   }
