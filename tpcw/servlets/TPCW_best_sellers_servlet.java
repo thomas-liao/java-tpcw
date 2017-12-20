@@ -110,7 +110,7 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
 	  ShortBook book = (ShortBook) books.elementAt(i);
 	  out.print("<TR><TD>" + (i+1) + "</TD>\n");
 	  // out.print("<TD><I>"+ book.a_fname +" "+ book.a_lname +"</I></TD>\n");
-	  out.print("<TD><I>"+ book.a_fname "</I></TD>\n");
+	  out.print("<TD><I>"+ book.a_fname +"</I></TD>\n");
 	  out.print("<TD><I>"+ book.a_lname +"</I></TD>\n");
 	  url = "./TPCW_product_detail_servlet?I_ID="+ 
 	      String.valueOf(book.i_id);
