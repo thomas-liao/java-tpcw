@@ -96,7 +96,7 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
-      out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
+      out.print("<TD><FONT SIZE=\"+1\">Prime - Qty</FONT></TD>\n"); 
       out.print("<TD><FONT SIZE=\"+1\">Product Name</FONT></TD></TR>\n");
       
 
